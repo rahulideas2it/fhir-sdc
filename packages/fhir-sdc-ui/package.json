@@ -3,6 +3,9 @@
   "version": "1.0.3",
   "public": true,
   "main": "dist/index.js",
+  "exports": {
+    "./core": "./lib/index.ts"
+  },
   "scripts": {
     "build": "tsup lib/index.ts --dts",
     "lint": "eslint .",
@@ -32,7 +35,9 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-storybook": "^0.6.15",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
+    "simplebar-react": "^3.2.4",
     "storybook": "^7.6.7",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
@@ -43,6 +48,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@fontsource-variable/inter": "^5.0.16",
+    "@fontsource-variable/public-sans": "^5.0.17",
     "@mui/material": "^5.15.3"
   }
 }

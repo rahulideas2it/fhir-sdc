@@ -5,10 +5,22 @@ import Typography from './typography'
 import CustomShadows from './shadows'
 import componentsOverride from './overrides'
 
-export const withMUITheme = (Component: any, context: any) => {
-  const { theme: themeKey } = context.globals
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
+import '@fontsource/material-icons'
+
+// Supports weights 100-900
+import '@fontsource-variable/inter'
+
+// Supports weights 100-900
+import '@fontsource-variable/public-sans'
+
+export const MUIThemeProvider = ({ children }: any) => {
+  const themeKey = 'dark'
   const theme = useMemo(() => Palette(themeKey), [themeKey])
-  const themeTypography = Typography(`'Inter Variable', sans-serif`)
+  const themeTypography = Typography(`'Public Sans Variable', sans-serif`)
   const themeCustomShadows = useMemo(() => CustomShadows(theme), [theme])
 
   const themeOptions: any = useMemo(
@@ -43,7 +55,7 @@ export const withMUITheme = (Component: any, context: any) => {
   return (
     <ThemeProvider theme={themes}>
       <CssBaseline />
-      <Component />
+      {children}
     </ThemeProvider>
   )
 }
