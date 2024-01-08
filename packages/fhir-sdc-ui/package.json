@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsup lib/index.ts --dts",
     "lint": "eslint .",
-    "storybook": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
@@ -14,6 +14,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@fontsource/material-icons": "^5.0.11",
+    "@fontsource/roboto": "^5.0.8",
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/addon-interactions": "^7.6.7",
     "@storybook/addon-links": "^7.6.7",
@@ -34,5 +36,13 @@
     "storybook": "^7.6.7",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^7.0.2",
+    "@ant-design/icons": "^5.2.6",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/inter": "^5.0.16",
+    "@mui/material": "^5.15.3"
   }
 }
