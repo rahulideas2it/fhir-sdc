@@ -7,11 +7,11 @@ interface props {
 }
 
 export const DashboardTemplate = ({ children }: props) => {
-  const [openDrawer, setOpenDrawer] = useState<boolean>(true)
+  const [openDrawer] = useState<boolean>(true)
 
-  const handleDrawerToggle = () => {
-    setOpenDrawer(!openDrawer)
-  }
+  // const handleDrawerToggle = () => {
+  //   setOpenDrawer(!openDrawer)
+  // }
   return (
     <Box sx={{ display: 'flex', width: '100%' }}>
       <Drawer open={openDrawer} />

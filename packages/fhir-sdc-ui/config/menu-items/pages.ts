@@ -9,7 +9,7 @@ const icons = {
 
 // ==============================|| MENU ITEMS - EXTRA PAGES ||============================== //
 
-const pages = {
+const pages: any = {
   id: 'authentication',
   title: 'Resources',
   type: 'group',

@@ -45,7 +45,7 @@ const Logo = () => {
               y2="500.71"
             >
               <stop offset="0" stopColor={theme.palette.primary.dark} />
-              <stop offset="1" stopColor={theme.palette.secondary.darker} />
+              <stop offset="1" stopColor={theme.palette.secondary.dark} />
             </linearGradient>
           </defs>
           <path

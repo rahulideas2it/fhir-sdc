@@ -1,6 +1,5 @@
 /* eslint-disable react/display-name */
 import PropTypes from 'prop-types'
-import { forwardRef, useEffect } from 'react'
 
 // material-ui
 import { useTheme } from '@mui/material/styles'
@@ -15,7 +14,7 @@ import {
 
 // ==============================|| NAVIGATION - LIST ITEM ||============================== //
 
-const NavItem = ({ item, level, drawerOpen, openItem }: any) => {
+const NavItem = ({ item, level, drawerOpen }: any) => {
   const theme = useTheme()
 
   // let itemTarget = '_self'
@@ -23,7 +22,7 @@ const NavItem = ({ item, level, drawerOpen, openItem }: any) => {
   //   itemTarget = '_blank'
   // }
 
-  const itemHandler = (id: any) => {
+  const itemHandler = () => {
     // dispatch(activeItem({ openItem: [id] }))
   }
 
@@ -43,7 +42,7 @@ const NavItem = ({ item, level, drawerOpen, openItem }: any) => {
     <ListItemButton
       // {...listItemProps}
       disabled={item.disabled}
-      onClick={() => itemHandler(item.id)}
+      onClick={() => itemHandler()}
       selected={isSelected}
       sx={{
         zIndex: 1201,

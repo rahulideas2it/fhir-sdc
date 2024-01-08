@@ -4,7 +4,7 @@ import utilities from './utilities'
 
 // ==============================|| MENU ITEMS ||============================== //
 
-const menuItems = {
+const menuItems: any = {
   items: [pages, utilities],
 }
 

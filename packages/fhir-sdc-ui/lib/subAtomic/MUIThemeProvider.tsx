@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material'
 import Palette from './palette'
 import Typography from './typography'

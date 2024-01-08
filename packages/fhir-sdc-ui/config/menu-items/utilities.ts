@@ -20,7 +20,7 @@ const icons = {
 
 // ==============================|| MENU ITEMS - UTILITIES ||============================== //
 
-const utilities = {
+const utilities: any = {
   id: 'utilities',
   title: 'Admin',
   type: 'group',
