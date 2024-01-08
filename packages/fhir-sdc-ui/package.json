@@ -1,6 +1,6 @@
 {
   "name": "@rahulideas2it/fhir-sdc-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "public": true,
   "main": "dist/index.js",
   "scripts": {
